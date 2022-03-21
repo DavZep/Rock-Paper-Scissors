@@ -1,8 +1,12 @@
 img {
+    margin: 5px;
     width: 150px;
     height: 100;
+
     
 }
+
+
 
 .info {
     align-self: flex-end;
@@ -38,4 +42,19 @@ animation-iteration-count: infinite;
 80% { transform: translate(-1px, -1px) rotate(1deg); }
 90% { transform: translate(1px, 2px) rotate(0deg); }
 100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.footer {
+    padding: 10px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+}
+
+.footer,
+.push {
+    height: 40px;
 }
