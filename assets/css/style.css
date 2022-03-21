@@ -51,7 +51,7 @@ animation-iteration-count: infinite;
     color: #fff;
     color: #ccc;
     text-align: center;
-    background: #666;
+    background: rgb(10, 10, 10);
 }
 
 .footer,
