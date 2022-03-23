@@ -6,24 +6,24 @@ img {
     
 }
 
-
-
 .info {
+    padding: 2px;
     align-self: flex-end;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
 }
+
 .bounce-1 {
     animation-name: bounce-1;
     animation-timing-function: linear;
 }
+
 @keyframes bounce-1 {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-5px); }
     100% { transform: translateY(0); }
 }
-
 
 img:hover {
 animation: shake 0.7s;

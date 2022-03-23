@@ -62,10 +62,15 @@
         var gameContainer = document.getElementById("rps-game");
         // This function is run whenever the user presses a key.
         document.addEventListener("click", function (event) {
-            gameContainer.innerHTML = "";
+            // console.log(event.target.tagName);
             // Determines which key was pressed.
-            var userPick = event.target.id
+        var userPick = event.target.id
+
+        if (event.target.tagName === "IMG") {
             if (compChoices.indexOf(userPick) > -1) {
+                gameContainer.innerHTML = "";
+                gameContainer.classList.add("alert-secondary");
+
                 var comPick = compChoices[Math.floor(Math.random() * compChoices.length)];
 
                 if (userPick === "r" && (comPick === "s")) {
@@ -112,7 +117,8 @@
             else {
                 gameContainer.innerHTML = `<h3><strong>WRONG INPUT! You picked incorrectly.</strong></h3><p>Please pick one from the following: <strong>Rock, Paper or Scissors</strong> to re-play</p>`
             };
-        });
+        }
+    });
     </script>
 
 
